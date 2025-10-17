@@ -1,5 +1,5 @@
-/* In Patch 3.0.2, all creatures in TBC raid instances had their max health reduced (almost all by 30%). This script restores the health values from Patch 2.4.3. */
-/* WIP. Currently covers only Karazhan, Gruul's Lair, and Magtheridon's Lair. More to be added later. */
+/* In Patch 3.0.2, all creatures in TBC raid instances had their max health reduced (generally by 30%). */
+/* This script restores the health values from Patch 2.4.3. */
 
 /* Karazhan Bosses and Adds */
 UPDATE `creature_template` SET `HealthModifier` = 0.9 WHERE `entry` = 17267;
@@ -51,8 +51,58 @@ UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` IN (19389, 21
 
 /* Magtheridon's Lair Bosses and Adds */
 UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` = 17256;
-UPDATE `creature_template` SET `HealthModifier` = 635 WHERE `entry` = 17257;
 UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 17454;
+UPDATE `creature_template` SET `HealthModifier` = 635 WHERE `entry` = 17257;
 
 /* Magtheridon's Lair Trash */
 UPDATE `creature_template` SET `HealthModifier` = 32 WHERE `entry` = 18829;
+
+/* Serpentshrine Cavern Bosses and Adds */
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (21958, 22009, 22140);
+UPDATE `creature_template` SET `HealthModifier` = 1.4875 WHERE `entry` = 21857;
+UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 21920;
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (22035, 22036);
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 21873;
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (22055, 22056, 22119, 22120);
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` = 21221;
+UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` IN (21964, 21965, 21966);
+UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 21214;
+UPDATE `creature_template` SET `HealthModifier` = 450 WHERE `entry` = 21216;
+UPDATE `creature_template` SET `HealthModifier` = 500 WHERE `entry` IN (21215, 21217, 21875);
+UPDATE `creature_template` SET `HealthModifier` = 750 WHERE `entry` = 21213;
+UPDATE `creature_template` SET `HealthModifier` = 800 WHERE `entry` = 21212;
+
+/* Serpentshrine Cavern Trash and NPCs */
+UPDATE `creature_template` SET `HealthModifier` = 1.3 WHERE `entry` = 22820;
+UPDATE `creature_template` SET `HealthModifier` = 1.5 WHERE `entry` = 21253;
+UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 21263;
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` = 22352;
+UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 21685;
+UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (21246, 21863, 22238);
+UPDATE `creature_template` SET `HealthModifier` = 17.2494 WHERE `entry` = 22250;
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` IN (21508, 21806, 22347);
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (21220, 21224, 21225, 21226, 21227, 21228, 21229, 21230, 21231, 21232, 21298, 21299, 21301, 21339);
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` = 21218;
+UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` = 21251;
+
+/* Tempest Keep Bosses and Adds */
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` = 18925;
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (19551, 21364);
+UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` = 18806;
+UPDATE `creature_template` SET `HealthModifier` = 22.5 WHERE `entry` = 21274;
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 21362;
+UPDATE `creature_template` SET `HealthModifier` = 27 WHERE `entry` IN (21268, 21271);
+UPDATE `creature_template` SET `HealthModifier` = 31.5 WHERE `entry` = 21269;
+UPDATE `creature_template` SET `HealthModifier` = 36 WHERE `entry` IN (20060, 20062, 20063, 20064, 21270, 21272);
+UPDATE `creature_template` SET `HealthModifier` = 40.5 WHERE `entry` = 21273;
+UPDATE `creature_template` SET `HealthModifier` = 400 WHERE `entry` = 19514;
+UPDATE `creature_template` SET `HealthModifier` = 500 WHERE `entry` = 18805;
+UPDATE `creature_template` SET `HealthModifier` = 600 WHERE `entry` = 19622;
+UPDATE `creature_template` SET `HealthModifier` = 750 WHERE `entry` = 19516;
+
+/* Tempest Keep Trash */
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (20043, 20044);
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 20038;
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (20031, 20033, 20034, 20036, 20037, 20042, 20047, 20048, 20052);
+UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` IN (20032, 20035, 20041, 20045, 20046, 20049, 20050);
+UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` IN (20039, 20040);
