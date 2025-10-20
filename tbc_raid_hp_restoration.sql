@@ -106,3 +106,6 @@ UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 20038;
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (20031, 20033, 20034, 20036, 20037, 20042, 20047, 20048, 20052);
 UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` IN (20032, 20035, 20041, 20045, 20046, 20049, 20050);
 UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` IN (20039, 20040);
+
+/* World Bosses */
+UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 18728;
