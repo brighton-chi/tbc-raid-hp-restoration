@@ -58,6 +58,7 @@ UPDATE `creature_template` SET `HealthModifier` = 635 WHERE `entry` = 17257; /* 
 UPDATE `creature_template` SET `HealthModifier` = 32 WHERE `entry` = 18829;
 
 /* Serpentshrine Cavern Bosses and Adds */
+UPDATE `creature_template` SET `HealthModifier` = 0.25 WHERE `entry` = 22091; /* Spitfire Totem: Azerothcore has this bugged at 0.7, resulting in 70,000(!) HP */
 UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (21958, 22009, 22140);
 UPDATE `creature_template` SET `HealthModifier` = 1.4875 WHERE `entry` = 21857;
 UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 21920;
