@@ -1,5 +1,5 @@
 /* In Patch 3.0.2, all creatures in TBC raid instances had their max health reduced (generally by 30%). */
-/* This script restores the health values from Patch 2.4.3. */
+/* This script restores the health values from the end of TBC, Patch 2.4.3. */
 
 /* Karazhan Bosses and Adds */
 UPDATE `creature_template` SET `HealthModifier` = 0.9 WHERE `entry` = 17267;
@@ -7,13 +7,12 @@ UPDATE `creature_template` SET `HealthModifier` = 1.4 WHERE `entry` = 17248;
 UPDATE `creature_template` SET `HealthModifier` = 1.9 WHERE `entry` IN (17096, 19781, 19782, 19783);
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 17167;
 UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 17548; /* Tito */
-UPDATE `creature_template` SET `HealthModifier` = 8.4 WHERE `entry` = 17229; /* Kil'rek */
-UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 19872, 19873, 19874, 19875);
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 17229, 19872, 19873, 19874, 19875); /* Moroes Adds & Kil'rek */
 UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (17543, 17546, 17547); /* Strawman, Roar, Tinhead */
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (17533, 17534, 17535, 18168); /* Romulo, Julianne, Dorothea, The Crone */
 UPDATE `creature_template` SET `HealthModifier` = 30 WHERE `entry` = 16181; /* Rokad the Ravager */
-UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (16152, 16179, 16180); /* Attumen the Huntsman (Mounted), Hyakiss the Lurker, Shadikith the Glider */
-UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (15550, 15687, 16151, 17521); /* Attumen the Huntsman (Unmounted), Moroes <Tower Steward>, Midnight, The Big Bad Wolf */
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (16179, 16180); /* Hyakiss the Lurker, Shadikith the Glider */
+UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (15550, 15687, 16151, 16152, 17521); /* Attumen the Huntsman, Moroes <Tower Steward>, Midnight, Attumen the Huntsman (Mounted), The Big Bad Wolf */
 UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 16457; /* Maiden of Virtue */
 UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` = 15688; /* Terestian Illhoof */
 UPDATE `creature_template` SET `HealthModifier` = 115 WHERE `entry` = 15691; /* The Curator */
@@ -25,9 +24,7 @@ UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 15689; /* 
 /* Karazhan Trash and NPCs */
 UPDATE `creature_template` SET `HealthModifier` = 0.175 WHERE `entry` = 17283;
 UPDATE `creature_template` SET `HealthModifier` = 0.2 WHERE `entry` = 16488;
-UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` IN (16153, 16159, 16426, 16806, 16812, 16813, 16815, 16816, 17518, 17603);
-UPDATE `creature_template` SET `HealthModifier` = 0.875 WHERE `entry` = 17651;
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (16169, 16388, 16811, 16814);
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (16153, 16159, 16169, 16388, 16426, 16806, 16811, 16812, 16813, 16814, 16815, 16816, 17518, 17603, 17651);
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (16409, 16468, 16491, 16492, 17067);
 UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 17261;
 UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (16170, 16173, 16539);
@@ -39,7 +36,7 @@ UPDATE `creature_template` SET `HealthModifier` = 9 WHERE `entry` IN (15547, 155
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (16481, 16482, 16545, 16595);
 UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (16471, 16485);
 UPDATE `creature_template` SET `HealthModifier` = 16 WHERE `entry` IN (16504, 16596);
-UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 17652;
+UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` = 17652;
 
 /* Gruul's Lair Bosses and Adds */
 UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (18832, 18834, 18835, 18836); /* Krosh Firehand, Olm the Summoner, Kiggler the Crazed, Blindeye the Seer */
@@ -58,9 +55,9 @@ UPDATE `creature_template` SET `HealthModifier` = 635 WHERE `entry` = 17257; /* 
 UPDATE `creature_template` SET `HealthModifier` = 32 WHERE `entry` = 18829;
 
 /* Serpentshrine Cavern Bosses and Adds */
-UPDATE `creature_template` SET `HealthModifier` = 0.25 WHERE `entry` = 22091; /* Spitfire Totem: Azerothcore has this bugged at 0.7, resulting in 70,000(!) HP */
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (21958, 22009, 22140);
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (21958, 22009, 22091, 22140);
 UPDATE `creature_template` SET `HealthModifier` = 1.4875 WHERE `entry` = 21857;
+UPDATE `creature_template` SET `HealthModifier` = 1.5 WHERE `entry` IN (21253, 21260);
 UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 21920;
 UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (22035, 22036);
 UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 21873;
@@ -75,7 +72,6 @@ UPDATE `creature_template` SET `HealthModifier` = 800 WHERE `entry` = 21212; /* 
 
 /* Serpentshrine Cavern Trash and NPCs */
 UPDATE `creature_template` SET `HealthModifier` = 1.3 WHERE `entry` = 22820;
-UPDATE `creature_template` SET `HealthModifier` = 1.5 WHERE `entry` = 21253;
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 21263;
 UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` = 22352;
 UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 21685;
@@ -121,19 +117,113 @@ UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 18487;
 UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 18502;
 UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` = 17854;
 UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` IN (17902, 17903, 18001);
-UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (3794, 3795, 17919, 17921, 17922, 17928, 17934, 17935, 17936, 17937, 17943, 17944, 17945, 18485, 18486);
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (17919, 17921, 17922, 17928, 17934, 17935, 17936, 17937, 17943, 17944, 17945, 18485, 18486);
 UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` = 17932;
 UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17920, 17933);
 UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (17905, 17916);
 UPDATE `creature_template` SET `HealthModifier` = 18 WHERE `entry` IN (17906, 17908);
 UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 17895;
 UPDATE `creature_template` SET `HealthModifier` = 22 WHERE `entry` = 17899;
-UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 17897;
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (17897, 17898);
 UPDATE `creature_template` SET `HealthModifier` = 45 WHERE `entry` = 17907;
 
 /* Hyjal Summit Special NPCs */
 UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` IN (17772, 17852); /* Lady Jaina Proudmoore, Thrall <Warchief> */
 UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 17948; /* Tyrande Whisperwind <High Priestess of Elune> */
+
+/* Black Temple Bosses and Adds */
+UPDATE `creature_template` SET `HealthModifier` = 0.5 WHERE `entry` = 23498;
+UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` = 22996;
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23398;
+UPDATE `creature_template` SET `HealthModifier` = 1.4 WHERE `entry` = 23469;
+UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (23226, 23375);
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (23318, 23523, 23524);
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` = 23216;
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 23421;
+UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` = 22997;
+UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` IN (22949, 22950, 22951, 22952); /* Gathios the Shattered, High Nethermancer Zerevor, Lady Malande, Veras Darkshadow */
+UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 23418; /* Essence of Suffering */
+UPDATE `creature_template` SET `HealthModifier` = 400 WHERE `entry` IN (23419, 23420); /* Essence of Desire, Essence of Anger */
+UPDATE `creature_template` SET `HealthModifier` = 500 WHERE `entry` = 22887; /* High Warlord Naj'entus */
+UPDATE `creature_template` SET `HealthModifier` = 600 WHERE `entry` = 22898; /* Supremus */
+UPDATE `creature_template` SET `HealthModifier` = 700 WHERE `entry` = 22856; /* Reliquary of the Lost */
+UPDATE `creature_template` SET `HealthModifier` = 750 WHERE `entry` IN (22947, 22948); /* Mother Shahraz, Gurtogg Bloodboil */
+UPDATE `creature_template` SET `HealthModifier` = 800 WHERE `entry` = 22917; /* Illidan Stormrage <The Betrayer> */
+UPDATE `creature_template` SET `HealthModifier` = 825 WHERE `entry` = 22871; /* Teron Gorefiend */
+
+/* Black Temple Trash and NPCs */
+UPDATE `creature_template` SET `HealthModifier` = 0.5 WHERE `entry` = 22929;
+UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` = 23109;
+UPDATE `creature_template` SET `HealthModifier` = 0.7536 WHERE `entry` IN (23410, 23411);
+UPDATE `creature_template` SET `HealthModifier` = 4.5 WHERE `entry` IN (22939, 22955, 22963, 23147, 23223);
+UPDATE `creature_template` SET `HealthModifier` = 4.9 WHERE `entry` IN (23157, 23158, 23159);
+UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 23047;
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` = 23401;
+UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` = 23319;
+UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` = 23436;
+UPDATE `creature_template` SET `HealthModifier` = 8.5 WHERE `entry` = 23111;
+UPDATE `creature_template` SET `HealthModifier` = 9 WHERE `entry` = 22883;
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 22946;
+UPDATE `creature_template` SET `HealthModifier` = 10.5 WHERE `entry` = 23197;
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` = 23399;
+UPDATE `creature_template` SET `HealthModifier` = 14 WHERE `entry` = 23389;
+UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (22848, 22849, 22881, 22885, 23371);
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` IN (23083, 23215, 23232);
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (22945, 22965, 23403);
+UPDATE `creature_template` SET `HealthModifier` = 30 WHERE `entry` IN (22845, 22846, 22847, 22853, 22869, 22874, 22875, 22876, 22877, 22879, 22882, 22959, 23028, 23235, 23236, 23237, 23339, 23374, 23400, 23402);
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (22960, 23018, 23030, 23172, 23330);
+UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` IN (22873, 23337, 23397);
+UPDATE `creature_template` SET `HealthModifier` = 45 WHERE `entry` IN (22844, 22880);
+UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` IN (22953, 22956, 22964, 23049);
+UPDATE `creature_template` SET `HealthModifier` = 55 WHERE `entry` IN (23222, 23293);
+UPDATE `creature_template` SET `HealthModifier` = 60 WHERE `entry` IN (23855, 22878);
+UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` IN (22884, 22954);
+UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` IN (22957, 22962, 23196, 23394);
+UPDATE `creature_template` SET `HealthModifier` = 165 WHERE `entry` IN (23089, 23191);
+
+/* Zul'Aman Bosses and Adds */
+
+
+/* Zul'Aman Trash and NPCs */
+
+
+/* Sunwell Plateau Bosses and Adds */
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 25744;
+UPDATE `creature_template` SET `HealthModifier` = 2.86 WHERE `entry` = 25502;
+UPDATE `creature_template` SET `HealthModifier` = 3.4784 WHERE `entry` = 25824;
+UPDATE `creature_template` SET `HealthModifier` = 19 WHERE `entry` = 25798;
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` IN (25708, 25799);
+UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 25772;
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` = 25588;
+UPDATE `creature_template` SET `HealthModifier` = 270 WHERE `entry` = 25840; /* Entropius */
+UPDATE `creature_template` SET `HealthModifier` = 360 WHERE `entry` = 25741; /* M'uru */
+UPDATE `creature_template` SET `HealthModifier` = 475 WHERE `entry` IN (24850, 24892, 25165, 25166); /* Kalecgos, Sathrovarr the Corruptor, Lady Sacrolash, Grand Warlock Alythess */
+UPDATE `creature_template` SET `HealthModifier` = 1154 WHERE `entry` = 25038; /* Felmyst */
+UPDATE `creature_template` SET `HealthModifier` = 1384 WHERE `entry` = 24882; /* Brutallus */
+UPDATE `creature_template` SET `HealthModifier` = 2200 WHERE `entry` = 25315; /* Kil'jaeden <The Deceiver> */
+
+/* Sunwell Plateau Trash and NPCs */
+UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` IN (25638, 25639, 25644);
+UPDATE `creature_template` SET `HealthModifier` = 0.7196 WHERE `entry` = 25632;
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (26289);
+UPDATE `creature_template` SET `HealthModifier` = 1.05 WHERE `entry` IN (25661, 26259);
+UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (25851, 26101);
+UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` = 25372;
+UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 25268;
+UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` = 25948;
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 25867;
+UPDATE `creature_template` SET `HealthModifier` = 35 WHERE `entry` IN (25363, 25367, 25368, 25369, 25370, 25371, 25373, 25483, 25484, 25485, 25486, 25506, 25509, 25591, 25597, 25837);
+UPDATE `creature_template` SET `HealthModifier` = 40 WHERE `entry` = 25592;
+UPDATE `creature_template` SET `HealthModifier` = 68.75 WHERE `entry` = 25593;
+UPDATE `creature_template` SET `HealthModifier` = 70 WHERE `entry` = 24895;
+UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` = 25507;
+UPDATE `creature_template` SET `HealthModifier` = 76 WHERE `entry` = 25595;
+UPDATE `creature_template` SET `HealthModifier` = 86 WHERE `entry` = 25599;
+UPDATE `creature_template` SET `HealthModifier` = 100 WHERE `entry` = 25508;
+UPDATE `creature_template` SET `HealthModifier` = 195 WHERE `entry` = 24891;
+UPDATE `creature_template` SET `HealthModifier` = 200 WHERE `entry` = 26247;
+UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` = 26246;
+UPDATE `creature_template` SET `HealthModifier` = 425 WHERE `entry` = 25319;
 
 /* World Bosses */
 UPDATE `creature_template` SET `HealthModifier` = 160 WHERE `entry` = 18728; /* Doom Lord Kazzak */
