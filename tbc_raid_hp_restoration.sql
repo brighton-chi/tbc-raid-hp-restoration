@@ -182,10 +182,35 @@ UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` IN (22957, 22
 UPDATE `creature_template` SET `HealthModifier` = 165 WHERE `entry` IN (23089, 23191);
 
 /* Zul'Aman Bosses and Adds */
-
+UPDATE `creature_template` SET `HealthModifier` = 0.5 WHERE `entry` = 24858;
+UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` IN (23877, 23878, 23880);
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (23818, 24504);
+UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 23879;
+UPDATE `creature_template` SET `HealthModifier` = 14 WHERE `entry` IN (24241, 24242, 24243, 24245, 24246, 24247);
+UPDATE `creature_template` SET `HealthModifier` = 17.5 WHERE `entry` IN (24240, 24244);
+UPDATE `creature_template` SET `HealthModifier` = 30.5 WHERE `entry` = 24143;
+UPDATE `creature_template` SET `HealthModifier` = 80 WHERE `entry` = 23577; /* Halazzi <Lynx Avatar> */
+UPDATE `creature_template` SET `HealthModifier` = 135 WHERE `entry` IN (23578, 24239); /* Jan'alai <Dragonhawk Avatar>, Hex Lord Malacrass */
+UPDATE `creature_template` SET `HealthModifier` = 180 WHERE `entry` = 23576; /* Nalorakk <Bear Avatar> */
+UPDATE `creature_template` SET `HealthModifier` = 220 WHERE `entry` = 23574; /* Akil'zon <Eagle Avatar> */
+UPDATE `creature_template` SET `HealthModifier` = 225 WHERE `entry` = 23863; /* Zul'jin */
 
 /* Zul'Aman Trash and NPCs */
-
+UPDATE `creature_template` SET `HealthModifier` = 0.4 WHERE `entry` = 23889;
+UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` IN (23757, 23790, 23822, 23897, 23999, 24358);
+UPDATE `creature_template` SET `HealthModifier` = 0.805 WHERE `entry` IN (24001, 24024, 24397, 24403, 24404, 24405, 24406, 24407, 24408, 24409);
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (23586, 23598, 24159);
+UPDATE `creature_template` SET `HealthModifier` = 2.1 WHERE `entry` = 24064;
+UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` = 23834;
+UPDATE `creature_template` SET `HealthModifier` = 3.5 WHERE `entry` = 24225;
+UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` IN (24047, 24138);
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` = 24217;
+UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` IN (24043, 24530);
+UPDATE `creature_template` SET `HealthModifier` = 8.4 WHERE `entry` = 24175;
+UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` IN (24179, 24180);
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (23542, 23581, 23582, 23584, 23587, 23596, 23597, 24059, 24065);
+UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (23580, 23774);
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` IN (24374, 24549);
 
 /* Sunwell Plateau Bosses and Adds */
 UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 25744;
