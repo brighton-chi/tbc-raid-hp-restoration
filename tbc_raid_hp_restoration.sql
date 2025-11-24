@@ -7,7 +7,7 @@ UPDATE `creature_template` SET `HealthModifier` = 1.4 WHERE `entry` = 17248;
 UPDATE `creature_template` SET `HealthModifier` = 1.9 WHERE `entry` IN (17096, 19781, 19782, 19783);
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 17167;
 UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 17548; /* Tito */
-UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 17229, 19872, 19873, 19874, 19875); /* Moroes Adds & Kil'rek */
+UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` IN (17007, 17229, 19872, 19873, 19874, 19875, 19876); /* Moroes Adds & Kil'rek */
 UPDATE `creature_template` SET `HealthModifier` = 15 WHERE `entry` IN (17543, 17546, 17547); /* Strawman, Roar, Tinhead */
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` IN (17533, 17534, 17535, 18168); /* Romulo, Julianne, Dorothea, The Crone */
 UPDATE `creature_template` SET `HealthModifier` = 30 WHERE `entry` = 16181; /* Rokad the Ravager */
@@ -29,7 +29,7 @@ UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` IN (16409, 164
 UPDATE `creature_template` SET `HealthModifier` = 2.5 WHERE `entry` = 17261;
 UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` IN (16170, 16173, 16539);
 UPDATE `creature_template` SET `HealthModifier` = 3.5 WHERE `entry` = 16178;
-UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (15551, 16175, 16176, 16389, 16406, 16407, 16411, 16412, 16415, 16424, 16425, 16525, 16530, 16540);
+UPDATE `creature_template` SET `HealthModifier` = 6 WHERE `entry` IN (15551, 16175, 16176, 16389, 16406, 16407, 16411, 16412, 16415, 16424, 16425, 16525, 16529, 16530, 16540);
 UPDATE `creature_template` SET `HealthModifier` = 7 WHERE `entry` IN (16171, 16177);
 UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` IN (16174, 16410, 16414, 16459, 16460, 16461, 16470, 16473, 16489, 16526, 16544);
 UPDATE `creature_template` SET `HealthModifier` = 9 WHERE `entry` IN (15547, 15548, 16408, 16472);
@@ -228,6 +228,7 @@ UPDATE `creature_template` SET `HealthModifier` = 1384 WHERE `entry` = 24882; /*
 UPDATE `creature_template` SET `HealthModifier` = 2200 WHERE `entry` = 25315; /* Kil'jaeden <The Deceiver> */
 
 /* Sunwell Plateau Trash and NPCs */
+UPDATE `creature_template` SET `HealthModifier` = 0.26 WHERE `entry` = 25598;
 UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` IN (25638, 25639, 25644);
 UPDATE `creature_template` SET `HealthModifier` = 0.7196 WHERE `entry` = 25632;
 UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` IN (26289);
