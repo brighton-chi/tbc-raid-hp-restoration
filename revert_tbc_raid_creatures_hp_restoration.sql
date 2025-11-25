@@ -1,5 +1,4 @@
--- In Patch 3.0.2, all creatures in TBC raid instances had their max health reduced (generally by 30%).
--- This script restores the health values from the end of TBC, Patch 2.4.3.
+-- This script reimplements the Patch 3.0.2 nerfs to TBC raid creatures' max health
 
 /* KARAZHAN BOSSES AND BOSS ADDS */
 
