@@ -405,6 +405,9 @@ UPDATE `creature_template` SET `HealthModifier` = 150 WHERE `entry` = 21965;
 -- Fathom-Lord Karathress
 UPDATE `creature_template` SET `HealthModifier` = 300 WHERE `entry` = 21214;
 
+-- Greyheart Spellbinder
+UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 21806;
+
 -- Inner Demon
 UPDATE `creature_template` SET `HealthModifier` = 1.4875 WHERE `entry` = 21857;
 
@@ -479,9 +482,6 @@ UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 21231;
 
 -- Greyheart Skulker
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 21232;
-
--- Greyheart Spellbinder
-UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 21806;
 
 -- Greyheart Technician
 UPDATE `creature_template` SET `HealthModifier` = 2 WHERE `entry` = 21263;
@@ -714,9 +714,6 @@ UPDATE `creature_template` SET `HealthModifier` = 5 WHERE `entry` = 17903;
 
 /* BLACK TEMPLE BOSSES AND BOSS ADDS */
 
--- Angered Soul Fragment
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23398;
-
 -- Ashtongue Channeler
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 23421;
 
@@ -791,6 +788,9 @@ UPDATE `creature_template` SET `HealthModifier` = 250 WHERE `entry` = 22952;
 
 
 /* BLACK TEMPLE TRASH */
+
+-- Angered Soul Fragment
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23398;
 
 -- Aqueous Lord
 UPDATE `creature_template` SET `HealthModifier` = 60 WHERE `entry` = 22878;
@@ -933,9 +933,6 @@ UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` = 23436;
 -- Leviathan
 UPDATE `creature_template` SET `HealthModifier` = 75 WHERE `entry` = 22884;
 
--- Mistress of Dementia
-UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` = 22957;
-
 -- Mutant War Hound
 UPDATE `creature_template` SET `HealthModifier` = 20 WHERE `entry` = 23232;
 
@@ -945,8 +942,8 @@ UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` = 23394;
 -- Priestess of Delight
 UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` = 22962;
 
--- Priestess of Torment
-UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 22956;
+-- Priestess of Dementia
+UPDATE `creature_template` SET `HealthModifier` = 90 WHERE `entry` = 22957;
 
 -- Shadowmoon Blood Mage
 UPDATE `creature_template` SET `HealthModifier` = 25 WHERE `entry` = 22945;
@@ -983,6 +980,9 @@ UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 23049;
 
 -- Shadowy Construct
 UPDATE `creature_template` SET `HealthModifier` = 8.5 WHERE `entry` = 23111;
+
+-- Sister of Pain
+UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 22956;
 
 -- Sister of Pleasure
 UPDATE `creature_template` SET `HealthModifier` = 50 WHERE `entry` = 22964;
@@ -1093,51 +1093,6 @@ UPDATE `creature_template` SET `HealthModifier` = 30.5 WHERE `entry` = 24143;
 UPDATE `creature_template` SET `HealthModifier` = 225 WHERE `entry` = 23863;
 
 
-/* ZUL'AMAN NPCS */
-
--- Adarrah
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24405;
-
--- Ashli
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24001;
-
--- Darwen
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24407;
-
--- Deez
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24403;
-
--- Fudgerick
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24406;
-
--- Galathryn
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24404;
-
--- Gunter
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24408;
-
--- Harkor
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23999;
-
--- Harrison Jones
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 24358;
-
--- Kraz
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24024;
-
--- Kyren
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24409;
-
--- Mannuth
-UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24397;
-
--- Tanzar
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23790;
-
--- Zungam
-UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23897;
-
-
 /* ZUL'AMAN TRASH */
 
 -- Amani Bear
@@ -1166,9 +1121,6 @@ UPDATE `creature_template` SET `HealthModifier` = 8 WHERE `entry` = 24043;
 
 -- Amani Lynx Cub
 UPDATE `creature_template` SET `HealthModifier` = 3 WHERE `entry` = 24064;
-
--- Amani Protective Ward
-UPDATE `creature_template` SET `HealthModifier` = 0.7 WHERE `entry` = 23822;
 
 -- Amani'shi Axe Thrower
 UPDATE `creature_template` SET `HealthModifier` = 12 WHERE `entry` = 23542;
@@ -1223,6 +1175,51 @@ UPDATE `creature_template` SET `HealthModifier` = 10 WHERE `entry` = 24179;
 
 -- Tamed Amani Crocolisk
 UPDATE `creature_template` SET `HealthModifier` = 4 WHERE `entry` = 24138;
+
+
+/* ZUL'AMAN NPCS */
+
+-- Adarrah
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24405;
+
+-- Ashli
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24001;
+
+-- Darwen
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24407;
+
+-- Deez
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24403;
+
+-- Fudgerick
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24406;
+
+-- Galathryn
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24404;
+
+-- Gunter
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24408;
+
+-- Harkor
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23999;
+
+-- Harrison Jones
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 24358;
+
+-- Kraz
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24024;
+
+-- Kyren
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24409;
+
+-- Mannuth
+UPDATE `creature_template` SET `HealthModifier` = 1.15 WHERE `entry` = 24397;
+
+-- Tanzar
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23790;
+
+-- Zungam
+UPDATE `creature_template` SET `HealthModifier` = 1 WHERE `entry` = 23897;
 
 
 /* SUNWELL PLATEAU BOSSES AND BOSS ADDS */
